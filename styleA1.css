@@ -1,0 +1,772 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    clear: both;
+}
+
+audio{
+
+    position: relative; 
+    right: 0; 
+    bottom: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;}
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 240, 162, 1);
+}
+::-webkit-scrollbar-thumb {
+    background: #FF96D3;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.artboards{
+    width: 100%px;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#introduction_page{
+    width: 100%;
+    height: 1080px;
+    background-color: rgba(2, 6, 238, 1); 
+    margin: auto;
+    margin-top: 0;
+}
+
+
+
+#pattern1{
+    background-image:  url("Fish pattern.png");
+    background-repeat: no-repeat;
+    opacity: 80%;
+    
+    max-width: 100%;
+    max-height: 90%;
+    margin: 10px;
+    position: absolute;
+    left: -50px;
+    top: 60px;
+    z-index: 0;
+  
+}
+#gif1{
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+
+h1{
+    color: #FF96D3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 100PX;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+  
+    text-align: start;
+    margin: auto;
+    border: none;
+    top: 150px;
+    left: 350px;
+    width: 1000px;
+    height: 500px;
+    z-index: 4;
+    
+   
+}
+
+h2{
+    color: #FF96D3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 40px;
+    text-align: start;
+    position: relative;
+    bottom: 15px;
+    right: 600px;
+    z-index: 3;
+
+}
+#pattern2{
+    bottom: 50px;
+    right: 20px;
+    position: absolute;
+    opacity: 80%;
+    z-index: 2;
+}
+#pattern3{
+    width: 500px;
+    height: 500px;
+    bottom: -50px;
+    right: 1200px;
+    position: absolute;
+    opacity: 80%;
+    z-index: 2;
+}
+#pattern4{
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    left: 400px;
+    position: absolute;
+    opacity: 80%;
+    z-index: 2;
+}
+#bubble_floating{
+    z-index: 5;
+    position: absolute;
+    opacity: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    right: 700px;
+
+}
+#bubble_floating2{
+    z-index: 4;
+    position: absolute;
+    opacity: 30%;
+    width: 400px;
+    height:400px;
+    bottom: 10px;
+    right: 400px;
+}
+#bubble_floating2_2{
+    z-index: 6;
+    position: absolute;
+    opacity: 30%;
+    width: 250px;
+    height: 250px;
+    top: 200px;
+    left: 500px;
+}
+
+#gif2{
+    height: 100%;
+    z-index: 5;
+    opacity: 30%;
+    position: absolute;
+}
+#question_page{
+    background-color: rgb(2, 6, 238, 1) ;
+    width: 100%;
+    height: 1080px;
+}
+#sticky_flower{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items: top;
+ 
+}
+
+.hidden_text{
+    position: absolute;
+    display: none;
+    font-size: 150px;
+    bottom: 800px;
+    right: 800px;
+}
+
+#hovering_fish:hover + .hidden_text {
+    display: block;
+    color: #FF96D3;
+    transform: scale(1);
+    width: 370px;
+    height: 137px;
+    top: 1200px;
+    left: 400px;
+    position: absolute;
+    
+}
+
+
+#first_page{
+    background-color: rgba(255, 240, 162, 1);
+    width: 100%;
+    height: 1000px;
+}
+
+
+#outline_pattern{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    z-index: 0;
+}
+
+#half_body{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    bottom: -180px;
+    right: 1550px;
+
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+   
+}
+
+@keyframes floating{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+
+.spinning_head{
+    margin: 0;
+    width: 143px;
+    height: auto;
+
+    transition: all 1s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.spinning_head:hover{
+    transform: rotate(1.75turn);
+    
+}
+#pinkhair1{
+    
+    z-index: 2;
+    top: -250px;
+    left: -1600px;
+    position: relative;
+    rotate: 90deg;
+}
+#pinkhair1_2{
+    
+    z-index: 2;
+    top: 40px;
+    right: 1380px;
+    position: relative;
+
+}
+#pinkhair1_3{
+    
+    z-index: 2;
+    top: 40px;
+    left: -600px;
+    position: relative;
+    rotate: 70deg;
+
+}
+
+#egirl{
+    z-index: 3;
+    top: -100px;
+    left: -300px;
+    position: relative;
+}
+
+#egirl2{
+    z-index: 3;
+    top: -250px;
+    left: -700px;
+    position: relative;
+    rotate: -30deg;
+}
+
+#egirl3{
+    z-index: 3;
+    top: 250px;
+    left: -750px;
+    position: relative;
+}
+#egirl4{
+   z-index: 3;
+   bottom: 100px;
+   left: -500px;
+   position: relative;
+   rotate: 200deg;
+}
+
+#greenhair1{
+    z-index: 4;
+   bottom: -50px;
+    left: -200px;
+    position: relative;
+    rotate: -80deg;
+}
+#greenhair2{
+    z-index: 4;
+    top:-250px;
+    left: 250px;
+    position: relative;
+}
+#greenhair3{
+    z-index: 4;
+    top: 255px;
+    left: 700px;
+    position: relative;
+}
+
+#smillinggirl{
+    z-index: 5;
+    top: 80px;
+    left: 850px;
+    position: relative;
+}
+#smillinggirl2{
+    z-index: 5;
+    top: -250px;
+    left: 1000px;
+    position: relative;
+}
+
+.spinning_flower{
+    width: 81px;
+    height: 78px;
+   
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(1.75turn); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(1.75turn); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(11.75turn); 
+        transform:rotate(1.75turn); 
+    } 
+}
+
+#spinflower1{
+    z-index: 0;
+    left: 400px;
+    top: 145px;
+    position: relative;
+
+}
+#spinflower2{
+    z-index: 0;
+    left: 350px;
+    top: -100px;
+    position: relative;
+}
+#spinflower3{
+    z-index: 0;
+    left: 580px;
+    top: -250px;
+    position: relative;
+}
+#spinflower4{
+    z-index: 0;
+    left: 950px;
+    top: -250px;
+    position: relative;
+}
+#spinflower5{
+    z-index: 0;
+    left: 1400px;
+    top: -250px;
+    position: relative;
+}
+#spinflower6{
+    z-index: 0;
+    left: 1680px;
+    top: -100px;
+    position: relative;
+}
+#spinflower7{
+    z-index: 0;
+    left: 1600px;
+    top: 125px;
+    position: relative;
+}
+#spinflower8 {
+    z-index: 0;
+    left: 1600px;
+    top: 250px;
+    position: relative;
+    filter: opacity(0.5) drop-shadow(0 0 #FF96D3);
+
+
+    animation-name: floating2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floating2{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+
+p {
+    margin: auto;
+    color:  rgba(2, 6, 238, 1);
+    font-weight: bold;
+    display: flex;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    top: -100px;
+    left: 1660px;
+    position: relative;
+    z-index: 5;
+    
+}
+
+#second_page{
+    background-color: rgba(255, 240, 162, 1);
+    width: 100%;
+    height: 1080px;  
+  
+   
+}
+
+.rectangle1 {
+   background-color: none;
+   width: 1368px;
+   height: 769.5px;
+   border: 4px solid  rgba(2, 6, 238, 1);
+   padding: 50px;
+   margin: 20px;
+   position: absolute;
+   z-index: 1;
+  }
+
+
+
+  #half_body2{
+    position: relative;
+    display: flex;
+    z-index: 3;
+    margin: 0;
+    top: 292px;
+    right: 1205px;
+
+  }
+
+  #Computer_screen{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    bottom: 34px;
+    right: 650px;
+  }
+ 
+  .character_animation{
+    position: relative;
+    z-index: 4;
+    width: 253px;
+    height: auto;
+    
+   
+  }
+  #char1{
+    right: 240px;
+    bottom: 30px; 
+    animation-name: first;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+ 
+@keyframes first{
+    0% { opacity: 1;}
+   
+    100% { opacity: 0;}
+}
+
+  #char2{
+    left: 35px;
+    bottom: 35px;
+
+    animation-name: second;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    
+}
+ 
+@keyframes second{
+    0% { opacity: 0;}
+    50% {opacity: 1}
+    100% { opacity: 0;}
+}
+  
+  #char3{
+    left: 300px;
+    bottom: 30px;
+
+    animation-name: third;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    
+}
+ 
+@keyframes third{
+    0% { opacity: 0;}
+    50% {opacity: 1;}
+    100% { opacity: 0;}
+}
+  #char4{
+    left: 550px;
+    bottom: 30px;
+
+    animation-name: fourth;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    
+}
+ 
+@keyframes fourth{
+    0%   { opacity: 0;}
+    50%  {opacity: 1;}
+    100% { opacity: 0;}
+
+  }
+.left:hover{
+    float: left;
+    display: inline-flex;
+    line-height: 4.5;
+    margin: auto;
+    color:  rgba(2, 6, 238, 1);
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+    top: 80px;
+    right: 800px;
+    position: relative;
+    z-index: 5;
+    font-stretch: extra-expanded;
+}
+
+.right{
+    float: right;
+    display: inline-flex;
+    line-height: 4.5;
+    margin: auto;
+    color:  rgba(2, 6, 238, 1);
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+    top: 80px;
+    left: 200px;
+    position: relative;
+    z-index: 5;
+}
+
+#flowerstalker2{
+    top: 100px;
+    right: 600px;
+    position: relative;
+    z-index: 6;
+
+    animation-name: flower;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+    
+}
+ 
+@keyframes flower{
+   0%  { background-color: none; left: 0px; top:0px;}
+  100% { background-color: none; left:300px; top:300px;}
+ 
+}
+
+#flowerstalker{
+    top: 0px;
+    left: 300px;
+    position: relative;
+    z-index: 6;
+
+    animation-name: flower;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+    
+}
+ 
+@keyframes flower{
+   0%  { background-color: none; left: 0px; top:0px;}
+  100% { background-color: none; left:300px; top:300px;}
+ 
+}
+
+#PatternLCD{
+    position: relative;
+    z-index: 7;
+    top: start;
+    left: 100px;
+}
+#PatternLCD2{
+    position: relative;
+    rotate: 90deg;
+    z-index: 1;
+    top: -200px;
+    left: 400px;
+
+}
+
+
+#third_page{
+    background-color: rgba(255, 240, 162, 1);
+    width: 100%;
+    height: 1080px;  
+}
+.movingtext {
+    line-height: 1;
+    z-index: 2;
+    right: 20px;
+   right: 200px;
+    top: 150px;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 25px;
+  }
+  .movingtext span {
+    
+    font-family: 'Noto Serif', serif;
+    position: relative;
+    display: inline-block;
+    color:  rgba(2, 6, 238, 1);
+    text-transform: uppercase;
+    animation: wavy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes wavy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+  #girlbeingpulled{
+    position: relative;
+    z-index: 4;
+    top: -20px;
+    left: 100px;
+   
+  }
+ 
+  #girlbeingpulled3 {
+    position: relative;
+    z-index: 4;
+    top: -90px;
+    left: -200px;
+  }
+
+  #happyflower{
+    position: relative;
+    z-index: 5;
+    top: -220px;
+    left: -200px;
+  
+    animation-name: floatinggreen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floatinggreen{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+
+#happyflower2{
+    position: relative;
+    z-index: 5;
+    top: -300px;
+    left: -50px;
+    
+  
+    animation-name: floatinggreen2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floatinggreen2{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+  
+#happyflower3{
+    position: relative;
+    z-index: 5;
+    top: -350px;
+    left: 100px;
+    
+  
+    animation-name: floatinggreen3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floatinggreen3{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+
+#happyflower4{
+    position: relative;
+    z-index: 5;
+    top: -300px;
+    left: 250px;
+    
+  
+    animation-name: floatinggreen3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes floatinggreen4{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 30px);}
+    100% { transform: translate(0,-0px);}
+}
+
+#patternhappy{
+    top: 20px;
+    left: 300px;
+    position: relative;
+    z-index: 7;
+}
